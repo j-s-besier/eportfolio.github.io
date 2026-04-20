@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jaccard Coefficient Calculations | Machine Learning</title>
+    <link rel="stylesheet" href="../../../../../styles.css">
+    <script src="../../../../../script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="../../../../../index.html">E-Portfolio</a>
+        <span class="header-context">Jaccard Coefficient Calculations</span>
+        <div class="header-actions">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Open navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <a href="../../../../../index.html#about-me">About Me</a>
+            <a href="../../../../../index.html#modules">Modules</a>
+            <a href="../../../../../index.html#structure">Structure</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="entry-main">
+      <section class="module-stage">
+        <div class="shell entry-shell">
+          <a class="back-link reveal" href="../../../../../machine-learning/index.html">Back to module</a>
+
+          <div class="course-meta reveal reveal-delay-1">
+            <p class="eyebrow">Machine Learning Professional Course</p>
+            <p class="timeframe">February-April 2026</p>
+          </div>
+
+          <h1 class="hero-title reveal reveal-delay-2">Jaccard Coefficient Calculations</h1>
+
+          <div class="entry-meta-strip reveal reveal-delay-3">
+            <div class="meta-pill"><strong>Unit</strong> 5</div>
+            <div class="meta-pill"><strong>Entry Type</strong> E-portfolio activity</div>
+            <p class="meta-pill status-chip status-chip-done reveal reveal-delay-1">Done</p>
+          </div>
+
+          <div class="entry-body">
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Task</h2>
+              <p>
+                The Unit 5 activity asked me to calculate Jaccard similarity for
+                <strong>Jack/Mary</strong>, <strong>Jack/Jim</strong>, and
+                <strong>Jim/Mary</strong> using pathological test results.
+              </p>
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Gender</th>
+                      <th>Fever</th>
+                      <th>Cough</th>
+                      <th>Test-1</th>
+                      <th>Test-2</th>
+                      <th>Test-3</th>
+                      <th>Test-4</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Jack</td>
+                      <td>M</td>
+                      <td>Y</td>
+                      <td>N</td>
+                      <td>P</td>
+                      <td>N</td>
+                      <td>N</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>F</td>
+                      <td>Y</td>
+                      <td>N</td>
+                      <td>P</td>
+                      <td>A</td>
+                      <td>P</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Jim</td>
+                      <td>M</td>
+                      <td>Y</td>
+                      <td>P</td>
+                      <td>N</td>
+                      <td>N</td>
+                      <td>N</td>
+                      <td>A</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Data Preparation</h2>
+              <p>
+                I used only the test outcome columns and converted <strong>Y/P</strong> to
+                <strong>1</strong> and <strong>N/A</strong> to <strong>0</strong>, so the score
+                measured shared positive results.
+              </p>
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Fever</th>
+                      <th>Cough</th>
+                      <th>Test-1</th>
+                      <th>Test-2</th>
+                      <th>Test-3</th>
+                      <th>Test-4</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Jack</td>
+                      <td>1</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>1</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Jim</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="entry-note">
+                <p>
+                  Formula: <strong>J(A, B) = |A ∩ B| / |A ∪ B|</strong>.
+                </p>
+              </div>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Calculations</h2>
+              <p>
+                <strong>Jack/Mary:</strong> 2 shared positives over 3 union positives, so
+                <strong>J = 0.67</strong>.
+              </p>
+              <p>
+                <strong>Jack/Jim:</strong> 1 shared positive over 3 union positives, so
+                <strong>J = 0.33</strong>.
+              </p>
+              <p>
+                <strong>Jim/Mary:</strong> 1 shared positive over 4 union positives, so
+                <strong>J = 0.25</strong>.
+              </p>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Results</h2>
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Pair</th>
+                      <th>Shared positives</th>
+                      <th>Union positives</th>
+                      <th>Jaccard coefficient</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Jack, Mary</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>0.67</td>
+                    </tr>
+                    <tr>
+                      <td>Jack, Jim</td>
+                      <td>1</td>
+                      <td>3</td>
+                      <td>0.33</td>
+                    </tr>
+                    <tr>
+                      <td>Jim, Mary</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>0.25</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                Jack and Mary are most similar; Jim and Mary are least similar.
+              </p>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Learning Outcomes</h2>
+              <p>
+                Supports
+                <a href="../../../../../machine-learning/index.html#lo1"><strong>LO1</strong></a>
+                and
+                <a href="../../../../../machine-learning/index.html#lo2"><strong>LO2</strong></a>
+                through binary similarity and data representation.
+              </p>
+            </section>
+
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

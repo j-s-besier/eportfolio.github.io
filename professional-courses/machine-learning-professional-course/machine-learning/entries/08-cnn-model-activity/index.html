@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CNN Model Activity | Machine Learning</title>
+    <link rel="stylesheet" href="../../../../../styles.css">
+    <script src="../../../../../script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="../../../../../index.html">E-Portfolio</a>
+        <span class="header-context">CNN Model Activity</span>
+        <div class="header-actions">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Open navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <a href="../../../../../index.html#about-me">About Me</a>
+            <a href="../../../../../index.html#modules">Modules</a>
+            <a href="../../../../../index.html#structure">Structure</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="entry-main">
+      <section class="module-stage">
+        <div class="shell entry-shell">
+          <a class="back-link reveal" href="../../../../../machine-learning/index.html">Back to module</a>
+
+          <div class="course-meta reveal reveal-delay-1">
+            <p class="eyebrow">Machine Learning Professional Course</p>
+            <p class="timeframe">February-April 2026</p>
+          </div>
+
+          <h1 class="hero-title reveal reveal-delay-2">CNN Model Activity</h1>
+
+          <div class="entry-meta-strip reveal reveal-delay-3">
+            <div class="meta-pill"><strong>Unit</strong> 9</div>
+            <div class="meta-pill"><strong>Entry Type</strong> E-portfolio activity</div>
+            <p class="meta-pill status-chip status-chip-done reveal reveal-delay-1">Done</p>
+          </div>
+
+          <div class="entry-body">
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Task</h2>
+              <p>
+                This entry uses the saved Unit 9 CNN notebook and records the workflow, results,
+                and one changed prediction example.
+              </p>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Notebook Workflow</h2>
+              <p>
+                The notebook uses CIFAR-10, scales the images, converts labels to categorical
+                format, and splits the data into training, validation, and test sets.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Model Architecture and Training</h2>
+              <p>
+                The model uses two convolutional layers, max pooling, a dense hidden layer, and a
+                10-class softmax output. The saved run used Adam, early stopping, and stopped after
+                9 epochs.
+              </p>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Saved Results</h2>
+              <p>
+                Saved outputs: training accuracy <code>0.8172</code>, validation accuracy
+                <code>0.6785</code>, test accuracy <code>0.6703</code>, test loss
+                <code>1.0768</code>, macro precision <code>0.68</code>, and macro recall
+                <code>0.67</code>. Vehicle classes performed better than visually similar animal
+                classes.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Single-Image Prediction</h2>
+              <p>
+                With the image index changed to <code>x_test[7]</code>, the model predicted
+                <code>frog</code>, matching the true label.
+              </p>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>What the Notebook Showed</h2>
+              <p>
+                The notebook shows a complete CNN pipeline and class-level differences in
+                performance.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Evidence</h2>
+              <div class="evidence-grid">
+                <figure class="evidence-card">
+                  <img
+                    src="../../../../../assets/images/machine-learning/entry-08-cnn-model-activity/training-loss-vs-validation-loss.png"
+                    alt="Training loss versus validation loss curve from the Unit 9 CNN notebook"
+                  >
+                  <figcaption>Training and validation loss curve</figcaption>
+                </figure>
+                <figure class="evidence-card">
+                  <img
+                    src="../../../../../assets/images/machine-learning/entry-08-cnn-model-activity/training-accuracy-vs-validation-accuracy.png"
+                    alt="Training accuracy versus validation accuracy curve from the Unit 9 CNN notebook"
+                  >
+                  <figcaption>Training and validation accuracy curve</figcaption>
+                </figure>
+                <figure class="evidence-card">
+                  <img
+                    src="../../../../../assets/images/machine-learning/entry-08-cnn-model-activity/single-image-prediction-example-x-test-7.png"
+                    alt="Single-image prediction example using x test index 7"
+                  >
+                  <figcaption><code>x_test[7]</code> single-image prediction correctly classified as frog</figcaption>
+                </figure>
+              </div>
+              <div class="evidence-card">
+                <ul>
+                  <li>
+                    <a download href="../../../../../assets/documents/machine-learning/entry-08-cnn-model-activity/Unit09%20Ex1%20Convolutional%20Neural%20Networks%20%28CNN%29%20-%20Object%20Recognition.ipynb">
+                      Notebook: CNN object recognition
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Learning Outcomes</h2>
+              <p>
+                Supports
+                <a href="../../../../../machine-learning/index.html#lo1"><strong>LO1</strong></a>
+                and
+                <a href="../../../../../machine-learning/index.html#lo2"><strong>LO2</strong></a>
+                through CNN dataset preparation, evaluation, and ethical reflection on
+                image-recognition use.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Reflection on Wall (2019)</h2>
+              <p>
+                Wall (2019) shows that CNN-based facial recognition raises fairness, privacy, and
+                accountability issues. Even a small number of false matches can cause real harm.
+              </p>
+              <ol class="reference-list">
+                <li>
+                  Wall, M. (2019) ‘Biased and wrong? Facial recognition tech in the dock’,
+                  <em>BBC News</em>, 3 July. Available at:
+                  <a href="https://www.bbc.com/news/business-48842750">https://www.bbc.com/news/business-48842750</a>
+                  (Accessed: 20 April 2026).
+                </li>
+              </ol>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gradient Cost Function | Machine Learning</title>
+    <link rel="stylesheet" href="../../../../../styles.css">
+    <script src="../../../../../script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="../../../../../index.html">E-Portfolio</a>
+        <span class="header-context">Gradient Cost Function</span>
+        <div class="header-actions">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Open navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <a href="../../../../../index.html#about-me">About Me</a>
+            <a href="../../../../../index.html#modules">Modules</a>
+            <a href="../../../../../index.html#structure">Structure</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="entry-main">
+      <section class="module-stage">
+        <div class="shell entry-shell">
+          <a class="back-link reveal" href="../../../../../machine-learning/index.html">Back to module</a>
+
+          <div class="course-meta reveal reveal-delay-1">
+            <p class="eyebrow">Machine Learning Professional Course</p>
+            <p class="timeframe">February-April 2026</p>
+          </div>
+
+          <h1 class="hero-title reveal reveal-delay-2">Gradient Cost Function</h1>
+
+          <div class="entry-meta-strip reveal reveal-delay-3">
+            <div class="meta-pill"><strong>Unit</strong> 8</div>
+            <div class="meta-pill"><strong>Entry Type</strong> E-portfolio activity</div>
+            <p class="meta-pill status-chip status-chip-done reveal reveal-delay-1">Done</p>
+          </div>
+
+          <div class="entry-body">
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Task</h2>
+              <p>
+                The Unit 8 task asked me to change iteration count and learning rate in the
+                gradient descent notebook and observe the effect on cost.
+              </p>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Notebook Setup</h2>
+              <p>
+                The notebook fits a simple line by updating <code>m</code> and <code>b</code> from
+                zero.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Changed Settings and Results</h2>
+              <p>
+                The test runs show the trade-off between convergence speed and stability.
+              </p>
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Run</th>
+                      <th>Iterations</th>
+                      <th>Learning rate</th>
+                      <th>Final m</th>
+                      <th>Final b</th>
+                      <th>Final cost</th>
+                      <th>Observation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Original notebook run</td>
+                      <td>100</td>
+                      <td>0.08</td>
+                      <td>2.040516</td>
+                      <td>2.853600</td>
+                      <td>0.004121</td>
+                      <td>Strong convergence near expected line.</td>
+                    </tr>
+                    <tr>
+                      <td>Fewer iterations</td>
+                      <td>50</td>
+                      <td>0.08</td>
+                      <td>2.150586</td>
+                      <td>2.420784</td>
+                      <td>0.065281</td>
+                      <td>Stopped early with higher cost.</td>
+                    </tr>
+                    <tr>
+                      <td>Lower learning rate</td>
+                      <td>100</td>
+                      <td>0.01</td>
+                      <td>2.448468</td>
+                      <td>1.380887</td>
+                      <td>0.480407</td>
+                      <td>Stable but slow convergence.</td>
+                    </tr>
+                    <tr>
+                      <td>Higher learning rate</td>
+                      <td>30</td>
+                      <td>0.2</td>
+                      <td>-3.80e17</td>
+                      <td>-1.05e17</td>
+                      <td>1.32e35</td>
+                      <td>Diverged after overshooting minimum.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>What the Activity Demonstrated</h2>
+              <p>
+                Optimisation is sensitive to parameter choice, not just model form.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Evidence</h2>
+              <div class="evidence-grid">
+                <figure class="evidence-card">
+                  <img
+                    src="../../../../../assets/images/machine-learning/entry-07-gradient-cost-function/cost-function-diagram.png"
+                    alt="Cost-function diagram included in the Unit 8 gradient descent notebook."
+                    loading="lazy"
+                  >
+                  <figcaption>Cost-function diagram</figcaption>
+                </figure>
+              </div>
+              <div class="evidence-card">
+                <ul>
+                  <li>
+                    <a download href="../../../../../assets/documents/machine-learning/entry-07-gradient-cost-function/Unit08%20Ex4%20gradient_descent_cost_function.ipynb">
+                      Notebook: gradient descent cost function
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Learning Outcomes</h2>
+              <p>
+                Supports
+                <a href="../../../../../machine-learning/index.html#lo2"><strong>LO2</strong></a>,
+                and
+                <a href="../../../../../machine-learning/index.html#lo3"><strong>LO3</strong></a>
+                through comparison of convergence behaviour under different optimisation settings.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

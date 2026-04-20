@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Summative Assessment: Individual Presentation | Machine Learning</title>
+    <link rel="stylesheet" href="../../../../../styles.css">
+    <script src="../../../../../script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="../../../../../index.html">E-Portfolio</a>
+        <span class="header-context">Summative Assessment: Individual Presentation</span>
+        <div class="header-actions">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Open navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <a href="../../../../../index.html#about-me">About Me</a>
+            <a href="../../../../../index.html#modules">Modules</a>
+            <a href="../../../../../index.html#structure">Structure</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="entry-main">
+      <section class="module-stage">
+        <div class="shell entry-shell">
+          <a class="back-link reveal" href="../../../../../machine-learning/index.html">Back to module</a>
+
+          <div class="course-meta reveal reveal-delay-1">
+            <p class="eyebrow">Machine Learning Professional Course</p>
+            <p class="timeframe">February-April 2026</p>
+          </div>
+
+          <h1 class="hero-title reveal reveal-delay-2">Summative Assessment:<br>Individual Presentation</h1>
+
+          <div class="entry-meta-strip reveal reveal-delay-3">
+            <div class="meta-pill"><strong>Unit</strong> 11</div>
+            <div class="meta-pill"><strong>Entry Type</strong> Summative assessment</div>
+            <p class="meta-pill status-chip status-chip-done reveal reveal-delay-1">Done</p>
+          </div>
+
+          <div class="entry-body">
+            <section class="entry-block reveal">
+              <h2>Task</h2>
+              <p>
+                The assessment was a 20-minute CIFAR-10 object-recognition presentation. My route
+                was Track 2: CNNs and data augmentation.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Project Summary</h2>
+              <p>
+                I compared two CNN models using a 40,000 / 10,000 / 10,000 split. Model A was
+                selected because it had the stronger validation and test accuracy, while also
+                producing the lower test loss. The result supported a clear final model choice
+                for the presentation rather than relying only on architecture description.
+              </p>
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Model</th>
+                      <th>Validation accuracy</th>
+                      <th>Test accuracy</th>
+                      <th>Test loss</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Model A</td>
+                      <td>0.6918</td>
+                      <td>0.6945</td>
+                      <td>0.9281</td>
+                    </tr>
+                    <tr>
+                      <td>Model B</td>
+                      <td>0.6611</td>
+                      <td>0.6616</td>
+                      <td>0.9674</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Comparison with Unit 6 Direction</h2>
+              <p>
+                The Unit 6 team project used Airbnb pricing data and combined regression with
+                K-means segmentation. Its focus was broad: clean the dataset, compare linear
+                regression, ridge regression, and random forest, then use clustering to explain
+                listing groups.
+              </p>
+              <p>
+                The Unit 11 project was narrower but deeper. Instead of comparing several
+                business-analysis methods, I evaluated two CNN models on CIFAR-10 using the same
+                40,000 / 10,000 / 10,000 split. Model A was stronger than Model B on validation
+                accuracy, test accuracy, and test loss, so the final choice was based on measured
+                performance rather than model description alone.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Evidence</h2>
+              <div class="evidence-grid">
+                <figure class="evidence-card">
+                  <img
+                    src="../../../../../assets/images/machine-learning/entry-10-individual-presentation/model-comparison-learning-curves.png"
+                    alt="Learning curves comparing the CNN models used in the individual presentation."
+                    loading="lazy"
+                  >
+                  <figcaption>Model comparison learning curves</figcaption>
+                </figure>
+
+                <figure class="evidence-card">
+                  <img
+                    src="../../../../../assets/images/machine-learning/entry-10-individual-presentation/model-a-confusion-matrix.png"
+                    alt="Confusion matrix for the selected CNN model."
+                    loading="lazy"
+                  >
+                  <figcaption>Confusion matrix for Model A</figcaption>
+                </figure>
+              </div>
+
+              <div class="evidence-card">
+                <ul>
+                  <li>
+                    <a href="../../../../../assets/documents/machine-learning/entry-10-individual-presentation/cnn-presentation.pdf">
+                      Submitted presentation PDF
+                    </a>
+                  </li>
+                  <li>
+                    <a href="../../../../../assets/documents/machine-learning/entry-10-individual-presentation/cifar10-baseline.ipynb">
+                      Supporting CNN notebook
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Learning Outcomes</h2>
+              <p>
+                Supports
+                <a href="../../../../../machine-learning/index.html#lo3"><strong>LO3</strong></a>
+                through critical evaluation of a CNN model.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

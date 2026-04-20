@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Model Performance Measurement | Machine Learning</title>
+    <link rel="stylesheet" href="../../../../../styles.css">
+    <script src="../../../../../script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="../../../../../index.html">E-Portfolio</a>
+        <span class="header-context">Model Performance Measurement</span>
+        <div class="header-actions">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Open navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <a href="../../../../../index.html#about-me">About Me</a>
+            <a href="../../../../../index.html#modules">Modules</a>
+            <a href="../../../../../index.html#structure">Structure</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="entry-main">
+      <section class="module-stage">
+        <div class="shell entry-shell">
+          <a class="back-link reveal" href="../../../../../machine-learning/index.html">Back to module</a>
+
+          <div class="course-meta reveal reveal-delay-1">
+            <p class="eyebrow">Machine Learning Professional Course</p>
+            <p class="timeframe">February-April 2026</p>
+          </div>
+
+          <h1 class="hero-title reveal reveal-delay-2">Model Performance Measurement</h1>
+
+          <div class="entry-meta-strip reveal reveal-delay-3">
+            <div class="meta-pill"><strong>Unit</strong> 11</div>
+            <div class="meta-pill"><strong>Entry Type</strong> E-portfolio activity</div>
+            <p class="meta-pill status-chip status-chip-done reveal reveal-delay-1">Done</p>
+          </div>
+
+          <div class="entry-body">
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Task</h2>
+              <p>
+                The Unit 11 activity asked me to rerun the performance notebook, change
+                parameters, and compare the effect on AUC and R<sup>2</sup>.
+              </p>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Notebook Workflow</h2>
+              <p>
+                The notebook covers classification metrics and regression metrics using small
+                worked examples and standard datasets.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Core Metric Results</h2>
+              <p>
+                Key saved outputs were accuracy <code>0.5000</code>, macro F1
+                <code>0.2667</code>, binary AUC <code>0.9947</code>, multiclass AUC
+                <code>0.9984</code>, log loss <code>0.2162</code>, MSE <code>0.3750</code>, MAE
+                <code>0.5000</code>, and baseline R<sup>2</sup> <code>0.9486</code>. The spread
+                shows why one metric is not enough.
+              </p>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>AUC Parameter Changes</h2>
+              <p>
+                For AUC, I changed the logistic-regression <code>C</code> parameter in the
+                breast-cancer example.
+              </p>
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th><code>C</code> value</th>
+                      <th>AUC</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0.01</td>
+                      <td>0.9847</td>
+                    </tr>
+                    <tr>
+                      <td>0.1</td>
+                      <td>0.9914</td>
+                    </tr>
+                    <tr>
+                      <td>1.0</td>
+                      <td>0.9947</td>
+                    </tr>
+                    <tr>
+                      <td>10.0</td>
+                      <td>0.9951</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                AUC increased slightly as <code>C</code> increased.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>R<sup>2</sup> Changes</h2>
+              <p>
+                For R<sup>2</sup>, I kept the true values fixed and changed the predictions to
+                create a closer fit and a worse fit.
+              </p>
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Prediction set</th>
+                      <th>R<sup>2</sup></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Baseline: <code>[2.5, 0.0, 2, 8]</code></td>
+                      <td>0.9486</td>
+                    </tr>
+                    <tr>
+                      <td>Closer fit: <code>[2.8, -0.3, 2.1, 7.2]</code></td>
+                      <td>0.9955</td>
+                    </tr>
+                    <tr>
+                      <td>Worse fit: <code>[1.0, 1.5, 0.5, 5.0]</code></td>
+                      <td>0.5118</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                Closer predictions increased R<sup>2</sup>; worse predictions reduced it sharply.
+              </p>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>What the Activity Showed</h2>
+              <p>
+                The main lesson was that metric choice must match the model type and the kind of
+                error being evaluated.
+              </p>
+            </section>
+
+            <section class="entry-block reveal reveal-delay-1">
+              <h2>Evidence</h2>
+              <div class="evidence-grid">
+                <figure class="evidence-card">
+                  <img
+                    src="../../../../../assets/images/machine-learning/entry-09-model-performance-measurement/confusion-matrix-example.svg"
+                    alt="Confusion matrix example from the Unit 11 performance measurement activity"
+                  >
+                  <figcaption>Confusion-matrix example from the notebook</figcaption>
+                </figure>
+                <figure class="evidence-card">
+                  <img
+                    src="../../../../../assets/images/machine-learning/entry-09-model-performance-measurement/auc-parameter-comparison.svg"
+                    alt="AUC comparison after changing logistic regression C values"
+                  >
+                  <figcaption>AUC comparison after changing <code>C</code></figcaption>
+                </figure>
+                <figure class="evidence-card">
+                  <img
+                    src="../../../../../assets/images/machine-learning/entry-09-model-performance-measurement/r2-parameter-comparison.svg"
+                    alt="R squared comparison after changing prediction values"
+                  >
+                  <figcaption>R<sup>2</sup> comparison after changing predictions</figcaption>
+                </figure>
+                <figure class="evidence-card">
+                  <img
+                    src="../../../../../assets/images/machine-learning/entry-09-model-performance-measurement/roc-curve-example.svg"
+                    alt="ROC curve example from the Unit 11 notebook workflow"
+                  >
+                  <figcaption>ROC-curve example from the notebook</figcaption>
+                </figure>
+              </div>
+              <div class="evidence-card">
+                <ul>
+                  <li>
+                    <a download href="../../../../../assets/documents/machine-learning/entry-09-model-performance-measurement/Unit11_model_Performance_Measurement.ipynb">
+                      Notebook: model performance measurement
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="entry-block reveal">
+              <h2>Learning Outcomes</h2>
+              <p>
+                Supports
+                <a href="../../../../../machine-learning/index.html#lo1"><strong>LO1</strong></a>,
+                as specified in the activity brief.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

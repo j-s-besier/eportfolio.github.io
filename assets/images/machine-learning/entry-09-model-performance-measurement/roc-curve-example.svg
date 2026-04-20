@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="420" viewBox="0 0 700 420">
+    <rect width="100%" height="100%" fill="#fffdf8"/>
+    <text x="350.0" y="30" text-anchor="middle" font-size="22" font-family="Arial" fill="#1f1a17">ROC curve example (class 2 area 0.79)</text>
+    <line x1="60" y1="360" x2="640" y2="360" stroke="#b9ab97" stroke-width="2"/>
+    <line x1="60" y1="60" x2="60" y2="360" stroke="#b9ab97" stroke-width="2"/>
+    <polyline fill="none" stroke="#9c6041" stroke-width="3" points="60.0,360.0 640.0,60.0"/>
+    <circle cx="60.0" cy="360.0" r="5" fill="#9c6041" /><circle cx="640.0" cy="60.0" r="5" fill="#9c6041" />
+    <text x="60.0" y="382" font-size="12" text-anchor="middle" fill="#5a5049">0</text><text x="640.0" y="382" font-size="12" text-anchor="middle" fill="#5a5049">1</text>
+    <text x="350.0" y="410" text-anchor="middle" font-size="14" fill="#5a5049">False Positive Rate</text>
+    <text x="20" y="210.0" transform="rotate(-90 20 210.0)" text-anchor="middle" font-size="14" fill="#5a5049">True Positive Rate</text>
+    </svg>
